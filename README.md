@@ -1,6 +1,6 @@
 # Track Reconstruction with Machine Learning
 
-This package contains machine learning-based track reconstruction code for the Imaging X-ray Polarimetry Explorer (IXPE). This is v2.0 of the project, there will be updates.
+This package contains machine learning-based track reconstruction code for the Imaging X-ray Polarimetry Explorer (IXPE). This is v2.0 of the project, there will be updates. It was written by A. Lawrence Peirson and continued by Jack T. Dinsmore
 
 ## v2.0 Notes:
 * New NNs are trained on 687mbar pressure (according to ixpesim) and threshold 20. Apply these settings when using them.
