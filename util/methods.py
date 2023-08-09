@@ -5,14 +5,17 @@ import os
 import numpy as np
 import multiprocess as mp
 from itertools import tee
-# import torch
+import torch
 from scipy.optimize import minimize
 from scipy.stats import norm
-# from util.net_test import *
+from util.net_test import *
 from scipy.special import i0, i1
 import scipy.integrate as integrate
 from scipy.optimize import minimize_scalar
 import math
+
+print("imported methods", fits.__version__)
+
 
 PIXEL_X_SPACE = 0.05  #in micrometers
 PIXEL_Y_SPACE = 0.0433
