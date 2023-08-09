@@ -14,8 +14,6 @@ import scipy.integrate as integrate
 from scipy.optimize import minimize_scalar
 import math
 
-print("imported methods", fits.__version__)
-
 
 PIXEL_X_SPACE = 0.05  #in micrometers
 PIXEL_Y_SPACE = 0.0433
