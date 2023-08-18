@@ -1,5 +1,6 @@
 #!/bin/bash
 #
+#SBATCH -o msh-gen.log
 #SBATCH --job-name=GPUtest
 #SBATCH --time=80:00
 #SBATCH --ntasks=1
@@ -13,7 +14,6 @@
 ##SBATCH -C GPU_CC:7.5
 
 N="9"
-DATA="09_det1"
 
 nvidia-smi
-python3 run_ensemble_eval.py $DATA --data_list data/mrk421/"$DATA"/ --batch_size 512
+python3 run_ensemble_eval.py nn_msh --data_list data/02001399/recon/ --batch_size 512

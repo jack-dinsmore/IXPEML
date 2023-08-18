@@ -4,7 +4,7 @@
 #SBATCH --partition=kipac
 #SBATCH --mem=16GB
 
-#source ~/.bashrc
+source ~/.bashrc
 source nnpipe_setup.sh
 source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 

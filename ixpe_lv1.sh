@@ -3,10 +3,10 @@
 ## Setup
 OBS='9'
 ATTNUM='4'
-PREFIX='/home/users/alpv95/khome/tracksml/'
-DATA_FOLDER=$PREFIX'moments/ixpeobssimdata/mrk421/01003'$OBS'01/'
-DET='3'
-INFILE='event_l1/ixpe01003'$OBS'01_det'$DET'_evt1_v01'
+PREFIX='/home/groups/rwr/jtd/IXPEML/'
+DATA_FOLDER=$PREFIX'test_lv1/'
+DET='2'
+INFILE='data/leakage/01002601/event_l1/ixpe01002601_det'$DET'_evt1_v02'
 
 ## Filter useless events.
 ftcopy $DATA_FOLDER"$INFILE"'.fits[EVENTS][STATUS2 == b0x0000000000x00x]' $DATA_FOLDER"$INFILE"_filter.fits clobber=True
