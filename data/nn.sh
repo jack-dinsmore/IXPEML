@@ -16,4 +16,4 @@
 source nnpipe_setup.sh
 cd ..
 nvidia-smi
-python3 run_ensemble_eval.py tmp --data_list $WORKING_DIR --batch_size 512
+python3 run_ensemble_eval.py $SOURCE"-det"$DET --data_list $DATA_FOLDER --batch_size 512

@@ -6,7 +6,8 @@
 #SBATCH -c 8
 
 source nnpipe_setup.sh
-source ~/.bashrc
+source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
+#source ~/.bashrc
 cd ..
 
-python3 -u run_build_fitsdata.py "$WORKING_DIR""$FILENAME"_recon.fits $WORKING_DIR
+python3 -u run_build_fitsdata.py $DATA_FOLDER$FILENAME'_recon.fits' $DATA_FOLDER
