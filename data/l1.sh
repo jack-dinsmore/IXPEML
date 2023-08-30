@@ -7,39 +7,39 @@
 source nnpipe_setup.sh
 source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
-#fdump $DATA_FOLDER"$RAW_FILENAME".fits[1] tmp.lis - 1 prdata=yes showcol=no
-#grep -i S_VDRIFT tmp.lis >> fix.lis
-#grep -i S_VBOT tmp.lis >> fix.lis
-#grep -I S_VGEM tmp.lis >> fix.lis
-#echo "FILE_LVL = '1'" >> fix.lis
+fdump $DATA_FOLDER"$RAW_FILENAME".fits[1] tmp.lis - 1 prdata=yes showcol=no
+grep -i S_VDRIFT tmp.lis >> fix.lis
+grep -i S_VBOT tmp.lis >> fix.lis
+grep -I S_VGEM tmp.lis >> fix.lis
+echo "FILE_LVL = '1'" >> fix.lis
 
-#fthedit $DATA_FOLDER"$FILENAME"_recon.fits @fix.lis
-#rm tmp.lis fix.lis
+fthedit $DATA_FOLDER"$FILENAME"_recon.fits @fix.lis
+rm tmp.lis fix.lis
 
-#ixpegaincorrtemp infile=$DATA_FOLDER"$FILENAME"_recon.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain.fits hkfile="$DATA_FOLDER"hk/ixpe"$OBS"_all_pay_132"$DET"_v01.fits clobber=True logfile=recon.log
-#ixpechrgcorr infile=$DATA_FOLDER"$FILENAME"_recon_gain.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain_corr.fits initmapfile="$CALDB"/data/ixpe/gpd/bcf/chrgmap/ixpe_d"$DET"_20170101_chrgmap_01.fits outmapfile=$DATA_FOLDER"$FILENAME"_chrgmap.fits phamax=60000.0 clobber=True
-#ixpegaincorrpkmap infile=$DATA_FOLDER"$FILENAME"_recon_gain_corr.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain_corr_map.fits clobber=True hvgainfile=CALDB
+ixpegaincorrtemp infile=$DATA_FOLDER"$FILENAME"_recon.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain.fits hkfile="$DATA_FOLDER"hk/ixpe"$OBS"_all_pay_132"$DET"_v01.fits clobber=True logfile=recon.log
+python3 $HEADAS/lib/python/heasoftpy/packages/ixpe/ixpechrgcorr/ixpechrgcorr.py infile=$DATA_FOLDER"$FILENAME"_recon_gain.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain_corr.fits initmapfile="$CALDB"/data/ixpe/gpd/bcf/chrgmap/ixpe_d"$DET"_20170101_chrgmap_01.fits outmapfile=$DATA_FOLDER"$FILENAME"_chrgmap.fits phamax=60000.0 clobber=True
+ixpegaincorrpkmap infile=$DATA_FOLDER"$FILENAME"_recon_gain_corr.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain_corr_map.fits clobber=True hvgainfile=CALDB
 
 ## Replace MOM angles for NN angles here, and add NN weights, p_tail and flags.
 ## Need to have run the NN analysis on _recon before this step.
-#ftpaste $DATA_FOLDER"$FILENAME"'_recon_gain_corr_map.fits[EVENTS][col -DETPHI2;]' $PREFIX'data_leakage_'$SEQ'_recon_'$SOURCE'_det'$DET'___nn_'$SOURCE'__ensemble.fits[1][col NN_PHI, DETPHI2==NN_PHI; NN_WEIGHT, W_NN==NN_WEIGHT; P_TAIL; FLAG]' $DATA_FOLDER"$FILENAME"_recon_nn.fits history=YES clobber=True
+ftpaste $DATA_FOLDER"$FILENAME"'_recon_gain_corr_map.fits[EVENTS][col -DETPHI2;]' $PREFIX'data_leakage_'$SEQ'___'$SOURCE'-det'$DET'__ensemble.fits[1][col NN_PHI, DETPHI2==NN_PHI; NN_WEIGHT, W_NN==NN_WEIGHT; P_TAIL; FLAG]' $DATA_FOLDER"$FILENAME"_recon_nn.fits history=YES clobber=True
 
-#ixpecalcstokes infile=$DATA_FOLDER"$FILENAME"_recon_nn.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits clobber=True
-## Use nn spmod files for spurious modulation correction.
+ixpecalcstokes infile=$DATA_FOLDER"$FILENAME"_recon_nn.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits clobber=True
+# Use nn spmod files for spurious modulation correction.
 
 
 
 # Jack changed this from Lawrence's code (This is the one I usually used)
-#ixpeadjmod infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits clobber=True spmodfile="$PREFIX"caldb/spmod/ixpe_d"$DET"_20170101_spmod_nn.fits
+ixpeadjmod infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits clobber=True spmodfile="$PREFIX"caldb/spmod/ixpe_d"$DET"_20170101_spmod_nn.fits
 
 # Another option
 #ixpeadjmod infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits clobber=True spmodfile="$PREFIX"caldb_nn/spmod/ixpe_d"$DET"_20170101_spmod_nn.fits
 
 # Original
-#ixpeadjmod infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits clobber=True spmodfile=$CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d"$DET"_20170101_spmod_nn.fits
+#ixpeadjmod infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits clobber=True spmodfile=$CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d"$DET"_20170101_spmod_02.fits
 
 # None
-cp $DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits
+#cp $DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits
 
 
 
