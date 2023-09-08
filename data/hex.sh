@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#SBATCH -o loghex1.log
+#SBATCH -o log-hex.log
 #SBATCH --time=16:00:00
-#SBATCH --job-name=hex1-01002601
+#SBATCH --job-name=hex
+#SBATCH --mem=16G
 #SBATCH -c 8
 
 source nnpipe_setup.sh

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#SBATCH -o lognn1.log
+#SBATCH -o log-nn.log
 #SBATCH --job-name=NN1-01002601
 #SBATCH --time=8:00:00
 #SBATCH --ntasks=1
