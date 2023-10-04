@@ -22,5 +22,6 @@ source ~/gpdsw/setup.sh
             --src-pol-angle 0 \
             --dme-pressure 687 \
 
+echo "Fits splitting"
 python3 ~/gpdsw/gpdswpy/fitsplit.py sim/sim_spec.fits 
 

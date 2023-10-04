@@ -8,42 +8,6 @@ source ~/mlixpe.sh
 source nnpipe_setup.sh
 source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
-#######
-
-fdelcol $DATA_FOLDER"$FILENAME"_recon.fits[EVENTS] STATUS2 no yes
-faddcol $DATA_FOLDER"$FILENAME"_recon.fits[EVENTS] $DATA_FOLDER"$FILENAME".fits[EVENTS] STATUS2
-
-fdump $DATA_FOLDER"$RAW_FILENAME".fits[0] tmp.lis - 1 prdata=yes showcol=no
-grep -i S_VDRIFT tmp.lis >> fix.lis
-grep -i S_VBOT tmp.lis >> fix.lis
-grep -I S_VGEM tmp.lis >> fix.lis
-echo "FILE_LVL = '1'" >> fix.lis
-
-fmodhead $DATA_FOLDER"$FILENAME"_recon.fits fix.lis
-rm tmp.lis fix.lis
-
-#######
-
-ixpegaincorrtemp infile=$DATA_FOLDER"$FILENAME"_recon.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain.fits hkfile="$DATA_FOLDER"hk/ixpe"$OBS"_all_pay_132"$DET"_v01.fits clobber=True logfile=recon.log
-
-#######
-
-ixpechrgcorr infile=$DATA_FOLDER"$FILENAME"_recon_gain.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain_corr.fits initmapfile="$CALDB"/data/ixpe/gpd/bcf/chrgmap/ixpe_d"$DET"_20170101_chrgmap_01.fits outmapfile=$DATA_FOLDER"$FILENAME"_chrgmap.fits phamax=60000.0 clobber=True
-
-#######
-
-export HEADAS=/home/groups/rwr/alpv95/tracksml/moments/heasoft-6.30.1/x86_64-pc-linux-gnu-libc2.17
-source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
-
-ixpegaincorrpkmap infile=$DATA_FOLDER"$FILENAME"_recon_gain_corr.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain_corr_map.fits clobber=True pkgainfile=CALDB hvgainfile=CALDB
-
-python3 test.py $DATA_FOLDER"$FILENAME"_recon_gain_corr_map.fits
-
-export HEADAS=/home/groups/rwr/jtd/heasoft-6.32.1/x86_64-pc-linux-gnu-libc2.17
-source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
-
-#######
-
 NN_FILE=$PREFIX'data_leakage_'$SEQ'_'$SOURCE'-det'$DET'___'$SOURCE'-det'$DET'__ensemble.fits'
 
 echo "Writing NN results in"

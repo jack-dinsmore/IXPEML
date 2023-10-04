@@ -1,17 +1,9 @@
-#!/bin/bash
-
-#SBATCH -olog-init.log
-#SBATCH --partition=kipac
-#SBATCH --mem=16GB
-
 source ./nnpipe_setup.sh
 source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
-set -e
-
 ftcopy $DATA_FOLDER"$RAW_FILENAME"'.fits[EVENTS][STATUS2 == b0x0000000000x00x]' $DATA_FOLDER"$FILENAME"'.fits' clobber=True
 
-ixpeevtrecon infile=$DATA_FOLDER"$FILENAME".fits outfile=$DATA_FOLDER$FILENAME'_recon.fits' clobber=True writeTracks=True
+cp $DATA_FOLDER"$FILENAME".fits $DATA_FOLDER$FILENAME'_recon.fits'
 
 ## Add some missing header values.
 fdump $DATA_FOLDER"$RAW_FILENAME".fits[1] tmp.lis - 1 prdata=yes showcol=no

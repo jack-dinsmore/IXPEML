@@ -5,6 +5,13 @@ VERSION='02'
 SOURCE="gx301"
 ATTNUM='1'
 
+# gx301 mom
+#SEQ='m1002601'
+#OBS='01002601'
+#VERSION='02'
+#SOURCE="gx301"
+#ATTNUM='1'
+
 # 4u
 #SEQ='02002399'
 #OBS='02002302'
@@ -40,6 +47,7 @@ PREFIX="/home/groups/rwr/jtd/IXPEML/"
 DATA_FOLDER=$PREFIX"data/leakage/"$SEQ"/"
 RAW_FILENAME="event_l1/ixpe"$OBS"_det"$DET"_evt"$EVT"_v"$VERSION
 FILENAME="recon/ixpe"$OBS"_det"$DET"_evt"$EVT"_v"$VERSION # recon
+NN_FOLDER=$DATA_FOLDER'recon/'$SOURCE'-det'$DET/
 
 
 FINAL_FOLDER=$DATA_FOLDER"event_nn"
