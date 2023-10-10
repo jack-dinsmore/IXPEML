@@ -3,7 +3,9 @@
 #SBATCH -olog-init.log
 #SBATCH --partition=kipac
 #SBATCH --mem=16GB
+#SBATCH --job-name=init
 
+source ~/mlixpe.sh
 source ./nnpipe_setup.sh
 source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 

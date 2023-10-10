@@ -1,3 +1,4 @@
+source ~/mlixpe.sh
 source nnpipe_setup.sh
 source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 

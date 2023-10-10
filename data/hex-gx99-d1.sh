@@ -1,18 +1,18 @@
 #!/bin/bash
 
-#SBATCH -o log-hex-gx-d1.log
+#SBATCH -o log-hex-gx99-d1.log
 #SBATCH --time=16:00:00
-#SBATCH --job-name=hex-gx-d1
-#SBATCH --mem=16G
+#SBATCH --job-name=hex-gx99-d1
+#SBATCH --mem=24G
 #SBATCH -c 8
 #SBATCH --partition=kipac
 
 
-# gx301
-SEQ='01002601'
-OBS='01002601'
-VERSION='02'
-SOURCE="gx301"
+# 4u
+SEQ='01002401'
+OBS='01002401'
+VERSION='01'
+SOURCE="gx99"
 ATTNUM='1'
 
 DET='1'
@@ -31,9 +31,7 @@ FINAL_FILENAME="ixpe"$OBS"_det"$DET"_nn"
 echo $OBS $DET
 
 source ~/mlnn.sh
-
-
 cd ..
-mkdir $NN_FOLDER
 
+mkdir $NN_FOLDER
 python3 -u run_build_fitsdata.py $DATA_FOLDER$FILENAME'_recon.fits' $NN_FOLDER

@@ -1,8 +1,10 @@
 #!/bin/bash
 
 #SBATCH -olog-l1.log
+#SBATCH --job-name=l1
 #SBATCH --partition=kipac
 #SBATCH --mem=16GB
+#SBATCH --cpus-per-task=4
 
 source ~/mlixpe.sh
 source nnpipe_setup.sh
@@ -23,6 +25,7 @@ fmodhead $DATA_FOLDER"$FILENAME"_recon.fits fix.lis
 rm tmp.lis fix.lis
 
 #######
+echo "Starting IXPE pipeline"
 
 ixpegaincorrtemp infile=$DATA_FOLDER"$FILENAME"_recon.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain.fits hkfile="$DATA_FOLDER"hk/ixpe"$OBS"_all_pay_132"$DET"_v01.fits clobber=True logfile=recon.log
 
@@ -46,14 +49,11 @@ source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
 NN_FILE=$PREFIX'data_leakage_'$SEQ'_'$SOURCE'-det'$DET'___'$SOURCE'-det'$DET'__ensemble.fits'
 
-echo "Writing NN results in"
 python3 write.py $DATA_FOLDER"$FILENAME"'_recon_gain_corr_map.fits' $NN_FILE $DATA_FOLDER"$FILENAME"_recon_nn.fits
-#ftpaste $DATA_FOLDER"$FILENAME"'_recon_gain_corr_map.fits[EVENTS][col -DETPHI2;]' $NN_FILE'[1][col NN_PHI, DETPHI2==NN_PHI; NN_WEIGHT, W_NN==NN_WEIGHT; XY_NN_ABS[0], ABSX==ABSX; P_TAIL; FLAG]' $DATA_FOLDER"$FILENAME"_recon_nn.fits history=YES clobber=True
-echo "Done writing NN results"
+
 #######
 
 ixpecalcstokes infile=$DATA_FOLDER"$FILENAME"_recon_nn.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes.fits clobber=True
-# Use nn spmod files for spurious modulation correction.
 
 #######
 
@@ -74,6 +74,17 @@ fthedit $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits["EVENTS"] @wcs.lis
 # Delete the events with the wrong status
 fdelcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] STATUS2 no yes
 faddcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] $DATA_FOLDER""$FILENAME".fits[EVENTS]" STATUS2
+
+
+#######
+
+# Purge the terminal environment for some reason otherwise the wrong xspec will be loaded
+tput reset && source ~/.bash_profile
+source ~/.bashrc
+
+source ~/mlixpe.sh
+source nnpipe_setup.sh
+source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
 #######
 

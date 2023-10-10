@@ -40,7 +40,7 @@ ATTNUM='1'
 #SOURCE='sim'
 #ATTNUM='1'
 
-DET='1'
+DET='2'
 EVT='1'
 
 PREFIX="/home/groups/rwr/jtd/IXPEML/"

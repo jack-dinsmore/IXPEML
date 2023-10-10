@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-#SBATCH -o log-nn-gx-d2.log
-#SBATCH --job-name=NN-gx-d2
-#SBATCH --time=8:00:00
+#SBATCH -o log-nn-gx99-d1.log
+#SBATCH --job-name=NN-gx99-d1
+#SBATCH --time=12:00:00
 #SBATCH --ntasks=1
 ##SBATCH --cpus-per-task=2
-#SBATCH --mem=24G
+#SBATCH --mem=32G
 #SBATCH --partition=owners
 #SBATCH --gres gpu:2
 #SBATCH -C GPU_MEM:16GB
@@ -13,15 +13,22 @@
 ##SBATCH -C GPU_SKU:RTX_2080Ti
 ##SBATCH -C GPU_CC:7.5
 
+#source ~/mlixpe.sh
+#module load py-pytorch/1.11.0_py39
+#module load py-h5py/3.7.0_py39
+#module load cuda/12.2.0
+#module load cudnn/7.6.5
+#module load ifort/2019
+
 source ~/mlnn.sh
 
-SEQ='01002601'
-OBS='01002601'
-VERSION='02'
-SOURCE="gx301"
+SEQ='01002401'
+OBS='01002401'
+VERSION='01'
+SOURCE='gx99'
 ATTNUM='1'
 
-DET='2'
+DET='1'
 EVT='1'
 
 PREFIX="/home/groups/rwr/jtd/IXPEML/"
