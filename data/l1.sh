@@ -1,14 +1,4 @@
-#!/bin/bash
-
-#SBATCH -olog-l1.log
-#SBATCH --job-name=l1
-#SBATCH --partition=kipac
-#SBATCH --mem=16GB
-#SBATCH --cpus-per-task=4
-
-source ~/mlixpe.sh
-source nnpipe_setup.sh
-source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
+echo $RAW_FILENAME
 
 #######
 
@@ -47,7 +37,7 @@ source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
 #######
 
-NN_FILE=$PREFIX'data_leakage_'$SEQ'_'$SOURCE'-det'$DET'___'$SOURCE'-det'$DET'__ensemble.fits'
+NN_FILE=$PREFIX'data_'$DATA_SUBDIR'_'$SEQ'_'$SOURCE'-det'$DET'___'$SOURCE'-det'$DET'__ensemble.fits'
 
 python3 write.py $DATA_FOLDER"$FILENAME"'_recon_gain_corr_map.fits' $NN_FILE $DATA_FOLDER"$FILENAME"_recon_nn.fits
 
@@ -74,40 +64,4 @@ fthedit $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits["EVENTS"] @wcs.lis
 # Delete the events with the wrong status
 fdelcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] STATUS2 no yes
 faddcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] $DATA_FOLDER""$FILENAME".fits[EVENTS]" STATUS2
-
-
-#######
-
-# Purge the terminal environment for some reason otherwise the wrong xspec will be loaded
-tput reset && source ~/.bash_profile
-source ~/.bashrc
-
-source ~/mlixpe.sh
-source nnpipe_setup.sh
-source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
-
-#######
-
-echo "About to start ixpedet2j2000"
-## Coordinate transformations.
-ixpedet2j2000 infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits outfile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w_j2000.fits attitude="$DATA_FOLDER"hk/ixpe"$OBS"_det"$DET"_att_v0"$ATTNUM".fits clobber=True
-
-#######
-
-cp $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w_j2000.fits $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w_j2000_int.fits
-
-echo "About to start ixpeaspcorr"
-ixpeaspcorr infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w_j2000.fits clobber=True n=300 att_path="$DATA_FOLDER"hk/ixpe"$OBS"_det"$DET"_att_v0"$ATTNUM".fits
-
-echo "Done"
-echo
-
-#######
-
-mkdir -p $FINAL_FOLDER
-cp $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w_j2000.fits $FINAL_FOLDER/"$FINAL_FILENAME".fits
-
-#######
-
-source l2.sh
 
