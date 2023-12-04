@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH -o log-hex.log
+#SBATCH -o log-hex-%j.log
 #SBATCH --time=64:00:00
 #SBATCH --job-name=hex
 #SBATCH --partition=kipac
-#SBATCH --mem=36G
+#SBATCH --mem=24G
 #SBATCH -c 4
 
 source source_select.sh

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -olog-runl1.log
+#SBATCH -olog-runl1-%j.log
 #SBATCH --job-name=runl1
 #SBATCH --partition=kipac
 #SBATCH --mem=16GB

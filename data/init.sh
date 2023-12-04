@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#SBATCH -olog-init.log
+#SBATCH -olog-init-%j.log
 #SBATCH --partition=kipac
-#SBATCH --mem=24GB
+#SBATCH --mem=16GB
 #SBATCH --job-name=init
 #SBATCH -t 08:00:00
 
@@ -22,7 +22,7 @@ ftcopy $DATA_FOLDER"$RAW_FILENAME"'.fits[EVENTS][STATUS2 == b0x0000000000x00x]' 
 
 ixpeevtrecon infile=$DATA_FOLDER"$FILENAME".fits outfile=$DATA_FOLDER$FILENAME'_recon.fits' clobber=True writeTracks=True 1> /dev/null 
 
-## Add some missing header values.
+# Add some missing header values.
 fdump $DATA_FOLDER"$RAW_FILENAME".fits[1] tmp.lis - 1 prdata=yes showcol=no
 grep -i S_VDRIFT tmp.lis >> fix.lis
 grep -i S_VBOT tmp.lis >> fix.lis
@@ -40,7 +40,7 @@ ftcopy $DATA_FOLDER"$RAW_FILENAME"'.fits[EVENTS][STATUS2 == b0x0000000000x00x]' 
 
 ixpeevtrecon infile=$DATA_FOLDER"$FILENAME".fits outfile=$DATA_FOLDER$FILENAME'_recon.fits' clobber=True writeTracks=True 1> /dev/null
 
-## Add some missing header values.
+# Add some missing header values.
 fdump $DATA_FOLDER"$RAW_FILENAME".fits[1] tmp.lis - 1 prdata=yes showcol=no
 grep -i S_VDRIFT tmp.lis >> fix.lis
 grep -i S_VBOT tmp.lis >> fix.lis
@@ -58,7 +58,7 @@ ftcopy $DATA_FOLDER"$RAW_FILENAME"'.fits[EVENTS][STATUS2 == b0x0000000000x00x]' 
 
 ixpeevtrecon infile=$DATA_FOLDER"$FILENAME".fits outfile=$DATA_FOLDER$FILENAME'_recon.fits' clobber=True writeTracks=True 1> /dev/null
 
-## Add some missing header values.
+# Add some missing header values.
 fdump $DATA_FOLDER"$RAW_FILENAME".fits[1] tmp.lis - 1 prdata=yes showcol=no
 grep -i S_VDRIFT tmp.lis >> fix.lis
 grep -i S_VBOT tmp.lis >> fix.lis

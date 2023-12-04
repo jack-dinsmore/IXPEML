@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-#SBATCH -o log-nn.log
+#SBATCH -o log-nn-%j.log
 #SBATCH --job-name=NN1-01002601
 #SBATCH --time=24:00:00
 #SBATCH --ntasks=1
 ##SBATCH --cpus-per-task=2
-#SBATCH --mem=32G
+#SBATCH --mem=24G
 #SBATCH --partition=owners
 #SBATCH --gres gpu:4
 #SBATCH -C GPU_MEM:16GB
@@ -15,8 +15,8 @@
 
 source ~/mlnn.sh
 source source_select.sh
-
 cd ..
+
 export DET='1'
 source data/filenames.sh
 nvidia-smi
