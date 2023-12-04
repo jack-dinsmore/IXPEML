@@ -1,23 +1,19 @@
-echo $RAW_FILENAME
+case $DET in 
+    1)
+        PAYNUM=$PAYNUM1
+        ;;
+    2)
+        PAYNUM=$PAYNUM2
+        ;;
+    3)
+        PAYNUM=$PAYNUM3
+        ;;
+    *)
+        echo "Could not recognize detector"
+        ;;
+esac
 
-#######
-
-fdelcol $DATA_FOLDER"$FILENAME"_recon.fits[EVENTS] STATUS2 no yes
-faddcol $DATA_FOLDER"$FILENAME"_recon.fits[EVENTS] $DATA_FOLDER"$FILENAME".fits[EVENTS] STATUS2
-
-fdump $DATA_FOLDER"$RAW_FILENAME".fits[0] tmp.lis - 1 prdata=yes showcol=no
-grep -i S_VDRIFT tmp.lis >> fix.lis
-grep -i S_VBOT tmp.lis >> fix.lis
-grep -I S_VGEM tmp.lis >> fix.lis
-echo "FILE_LVL = '1'" >> fix.lis
-
-fmodhead $DATA_FOLDER"$FILENAME"_recon.fits fix.lis
-rm tmp.lis fix.lis
-
-#######
-echo "Starting IXPE pipeline"
-
-ixpegaincorrtemp infile=$DATA_FOLDER"$FILENAME"_recon.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain.fits hkfile="$DATA_FOLDER"hk/ixpe"$OBS"_all_pay_132"$DET"_v01.fits clobber=True logfile=recon.log
+ixpegaincorrtemp infile=$DATA_FOLDER"$FILENAME"_recon.fits outfile=$DATA_FOLDER"$FILENAME"_recon_gain.fits hkfile="$DATA_FOLDER"hk/ixpe"$SETNUM"_all_pay_132"$DET"_v"$PAYNUM".fits clobber=True logfile=recon.log
 
 #######
 
@@ -37,7 +33,7 @@ source $HEADAS/headas-init.sh; source $CALDB/software/tools/caldbinit.sh
 
 #######
 
-NN_FILE=$PREFIX'data_'$DATA_SUBDIR'_'$SEQ'_'$SOURCE'-det'$DET'___'$SOURCE'-det'$DET'__ensemble.fits'
+NN_FILE=$PREFIX'data_'$DATA_SUBDIR'_'$SEQ'_recon_'$SOURCE'-det'$DET'___'$SOURCE'-det'$DET'__ensemble.fits'
 
 python3 write.py $DATA_FOLDER"$FILENAME"'_recon_gain_corr_map.fits' $NN_FILE $DATA_FOLDER"$FILENAME"_recon_nn.fits
 
@@ -56,12 +52,11 @@ ixpeweights infile=$DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj.fits outfile=$DAT
 #######
 
 ## Add some missing header values.
-yes | ftlist $DATA_FOLDER"$RAW_FILENAME".fits["EVENTS"] outfile=STDOUT ROWS=0 | grep TC > wcs.lis
-sed -i 's/36 /44 /;s/37 /45 /' wcs.lis
-echo -e "TLMIN44 = 1\nTLMAX44 = 600\nTLMIN45 = 1\nTLMAX45 = 600" >> wcs.lis
-fthedit $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits["EVENTS"] @wcs.lis
+sed -i 's/36 /44 /;s/37 /45 /' $DATA_FOLDER"$FILENAME"wcs.lis
+echo -e "TLMIN44 = 1\nTLMAX44 = 600\nTLMIN45 = 1\nTLMAX45 = 600" >> $DATA_FOLDER"$FILENAME"wcs.lis
+fthedit $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits["EVENTS"] @$DATA_FOLDER"$FILENAME"wcs.lis
 
 # Delete the events with the wrong status
 fdelcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] STATUS2 no yes
-faddcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] $DATA_FOLDER""$FILENAME".fits[EVENTS]" STATUS2
+faddcol $DATA_FOLDER"$FILENAME"_recon_nn_stokes_adj_w.fits[EVENTS] $DATA_FOLDER""$FILENAME"_recon.fits[EVENTS]" STATUS2
 
