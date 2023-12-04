@@ -1,3 +1,15 @@
+# JTD
+caldb_nn
+example
+net_archive
+notebooks
+results
+
+./ixpe_lv1.sh
+./build.sh
+./submit.sh
+
+# Other
 slurm*
 gen4*
 gen2*

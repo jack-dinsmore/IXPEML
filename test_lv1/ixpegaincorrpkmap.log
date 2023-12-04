@@ -1,0 +1,211 @@
+[2023-08-09T13:56:12.598435] [INFO] 
+[2023-08-09T13:56:12.598719] [INFO] ######################################################################
+[2023-08-09T13:56:12.598783] [INFO]   ixpegaincorrpkmap ver.: 1.5 - New run of ixpegaincorrpkmap started
+[2023-08-09T13:56:12.598813] [INFO] ######################################################################
+[2023-08-09T13:56:12.598839] [INFO] 
+[2023-08-09T13:56:12.622321] [INFO] Name of the peak gain calibration file: CALDB
+[2023-08-09T13:56:12.630777] [INFO] Name of the high voltage calibration file: CALDB
+[2023-08-09T13:56:12.638040] [INFO] Name of the pressure secular variation calibration file: CALDB
+[2023-08-09T13:56:12.645104] [INFO] Run Command : ixpegaincorrpkmap  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits pkgainfile=CALDB hvgainfile=CALDB secvarfile=CALDB dvgemcaldb=no
+[2023-08-09T13:56:12.645181] [INFO] ------------------------------------------------------------------
+[2023-08-09T13:56:12.645258] [INFO]  		Running ixpegaincorrpkmap_1.5
+[2023-08-09T13:56:12.645287] [INFO] ------------------------------------------------------------------
+[2023-08-09T13:56:12.645329] [INFO]             Input Parameters List: 
+[2023-08-09T13:56:12.645371] [INFO] Name of the input ixpeLvl1FitsFile file            : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits
+[2023-08-09T13:56:12.645401] [INFO] Name of the output ixpe file                       : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits
+[2023-08-09T13:56:12.645443] [INFO] Name of the peak gain calibration file             : CALDB
+[2023-08-09T13:56:12.645486] [INFO] Name of the high voltage calibration file          : CALDB
+[2023-08-09T13:56:12.645519] [INFO] Name of the pressure variation calibration file    : CALDB
+[2023-08-09T13:56:12.645550] [INFO] Use VGEM value from CALDB hvgainfile               : no
+[2023-08-09T13:56:12.645602] [INFO] Log Terminal level                                 : 1
+[2023-08-09T13:56:12.645633] [INFO] Log File Level                                     : 1
+[2023-08-09T13:56:12.645663] [INFO] ---------------------------------------------------------------------
+[2023-08-09T13:56:12.647332] [ERROR] OpenFitsFile FITSIO routine ffopen returned error #104: could not open the named file
+[2023-08-09T13:56:12.647376] [ERROR] Error: Unable to open input fits file: /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits
+[2023-08-09T13:56:12.647414] [INFO] -----------------------------------
+[2023-08-09T13:56:12.647448] [INFO] ixpegaincorrpkmap_1.5: Exit with Error.
+[2023-08-09T13:56:12.647481] [INFO] -----------------------------------
+[2023-08-09T15:30:13.130445] [INFO] 
+[2023-08-09T15:30:13.130660] [INFO] ######################################################################
+[2023-08-09T15:30:13.130720] [INFO]   ixpegaincorrpkmap ver.: 1.5 - New run of ixpegaincorrpkmap started
+[2023-08-09T15:30:13.130770] [INFO] ######################################################################
+[2023-08-09T15:30:13.130817] [INFO] 
+[2023-08-09T15:30:13.158027] [INFO] Name of the peak gain calibration file: CALDB
+[2023-08-09T15:30:13.166806] [INFO] Name of the high voltage calibration file: CALDB
+[2023-08-09T15:30:13.173909] [INFO] Name of the pressure secular variation calibration file: CALDB
+[2023-08-09T15:30:13.182897] [INFO] Run Command : ixpegaincorrpkmap  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits pkgainfile=CALDB hvgainfile=CALDB secvarfile=CALDB dvgemcaldb=no
+[2023-08-09T15:30:13.183002] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:30:13.183099] [INFO]  		Running ixpegaincorrpkmap_1.5
+[2023-08-09T15:30:13.183154] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:30:13.183209] [INFO]             Input Parameters List: 
+[2023-08-09T15:30:13.183258] [INFO] Name of the input ixpeLvl1FitsFile file            : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits
+[2023-08-09T15:30:13.183317] [INFO] Name of the output ixpe file                       : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits
+[2023-08-09T15:30:13.183364] [INFO] Name of the peak gain calibration file             : CALDB
+[2023-08-09T15:30:13.183410] [INFO] Name of the high voltage calibration file          : CALDB
+[2023-08-09T15:30:13.183455] [INFO] Name of the pressure variation calibration file    : CALDB
+[2023-08-09T15:30:13.183499] [INFO] Use VGEM value from CALDB hvgainfile               : no
+[2023-08-09T15:30:13.183562] [INFO] Log Terminal level                                 : 1
+[2023-08-09T15:30:13.183609] [INFO] Log File Level                                     : 1
+[2023-08-09T15:30:13.183654] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:30:13.198031] [ERROR] Keyword S_VGEM not found in input event file, rerun ixpegaincorrpkmap with dvgemcaldb=yes to use VGEM CALDB value
+[2023-08-09T15:30:13.198080] [INFO] -----------------------------------
+[2023-08-09T15:30:13.198121] [INFO] ixpegaincorrpkmap_1.5: Exit with Error.
+[2023-08-09T15:30:13.198154] [INFO] -----------------------------------
+[2023-08-09T15:34:52.292824] [INFO] 
+[2023-08-09T15:34:52.293040] [INFO] ######################################################################
+[2023-08-09T15:34:52.293112] [INFO]   ixpegaincorrpkmap ver.: 1.5 - New run of ixpegaincorrpkmap started
+[2023-08-09T15:34:52.293164] [INFO] ######################################################################
+[2023-08-09T15:34:52.293210] [INFO] 
+[2023-08-09T15:34:52.320292] [INFO] Name of the peak gain calibration file: CALDB
+[2023-08-09T15:34:52.329829] [INFO] Name of the high voltage calibration file: CALDB
+[2023-08-09T15:34:52.338852] [INFO] Name of the pressure secular variation calibration file: CALDB
+[2023-08-09T15:34:52.348407] [INFO] Run Command : ixpegaincorrpkmap  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits pkgainfile=CALDB hvgainfile=CALDB secvarfile=CALDB dvgemcaldb=no
+[2023-08-09T15:34:52.348505] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:34:52.348601] [INFO]  		Running ixpegaincorrpkmap_1.5
+[2023-08-09T15:34:52.348648] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:34:52.348694] [INFO]             Input Parameters List: 
+[2023-08-09T15:34:52.348739] [INFO] Name of the input ixpeLvl1FitsFile file            : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits
+[2023-08-09T15:34:52.348788] [INFO] Name of the output ixpe file                       : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits
+[2023-08-09T15:34:52.348833] [INFO] Name of the peak gain calibration file             : CALDB
+[2023-08-09T15:34:52.348877] [INFO] Name of the high voltage calibration file          : CALDB
+[2023-08-09T15:34:52.348923] [INFO] Name of the pressure variation calibration file    : CALDB
+[2023-08-09T15:34:52.348967] [INFO] Use VGEM value from CALDB hvgainfile               : no
+[2023-08-09T15:34:52.349030] [INFO] Log Terminal level                                 : 1
+[2023-08-09T15:34:52.349076] [INFO] Log File Level                                     : 1
+[2023-08-09T15:34:52.349122] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:34:52.363739] [ERROR] Keyword S_VGEM not found in input event file, rerun ixpegaincorrpkmap with dvgemcaldb=yes to use VGEM CALDB value
+[2023-08-09T15:34:52.363814] [INFO] -----------------------------------
+[2023-08-09T15:34:52.363868] [INFO] ixpegaincorrpkmap_1.5: Exit with Error.
+[2023-08-09T15:34:52.363916] [INFO] -----------------------------------
+[2023-08-09T15:37:30.688992] [INFO] 
+[2023-08-09T15:37:30.689207] [INFO] ######################################################################
+[2023-08-09T15:37:30.689280] [INFO]   ixpegaincorrpkmap ver.: 1.5 - New run of ixpegaincorrpkmap started
+[2023-08-09T15:37:30.689340] [INFO] ######################################################################
+[2023-08-09T15:37:30.689390] [INFO] 
+[2023-08-09T15:37:30.717333] [INFO] Name of the peak gain calibration file: CALDB
+[2023-08-09T15:37:30.727014] [INFO] Name of the high voltage calibration file: CALDB
+[2023-08-09T15:37:30.734306] [INFO] Name of the pressure secular variation calibration file: CALDB
+[2023-08-09T15:37:30.740697] [INFO] Run Command : ixpegaincorrpkmap  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits pkgainfile=CALDB hvgainfile=CALDB secvarfile=CALDB dvgemcaldb=no
+[2023-08-09T15:37:30.740802] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:37:30.740904] [INFO]  		Running ixpegaincorrpkmap_1.5
+[2023-08-09T15:37:30.740954] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:37:30.741007] [INFO]             Input Parameters List: 
+[2023-08-09T15:37:30.741057] [INFO] Name of the input ixpeLvl1FitsFile file            : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr.fits
+[2023-08-09T15:37:30.741112] [INFO] Name of the output ixpe file                       : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_gain_corr_map.fits
+[2023-08-09T15:37:30.741161] [INFO] Name of the peak gain calibration file             : CALDB
+[2023-08-09T15:37:30.741209] [INFO] Name of the high voltage calibration file          : CALDB
+[2023-08-09T15:37:30.741256] [INFO] Name of the pressure variation calibration file    : CALDB
+[2023-08-09T15:37:30.741322] [INFO] Use VGEM value from CALDB hvgainfile               : no
+[2023-08-09T15:37:30.741394] [INFO] Log Terminal level                                 : 1
+[2023-08-09T15:37:30.741447] [INFO] Log File Level                                     : 1
+[2023-08-09T15:37:30.741496] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:37:30.758924] [INFO] Using VGEM value from keyword S_VGEM of input event file : 439.057
+[2023-08-09T15:37:30.775186] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d2_20170101_pkgain_05.fits file.
+[2023-08-09T15:37:30.775260] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d2_20170101_pkgain_05.fits
+[2023-08-09T15:37:30.775330] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d2_20170101_pkgain_05.fits' CALDB file.
+[2023-08-09T15:37:30.775401] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d2_20170101_pkgain_05.fits in readonly mode
+[2023-08-09T15:37:30.788629] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d2_20170101_pkgain_05.fits...
+[2023-08-09T15:37:30.805363] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d2_20170101_pkgain_05.fits closed.
+[2023-08-09T15:37:30.816916] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_hvgain_02.fits file.
+[2023-08-09T15:37:30.816969] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_hvgain_02.fits
+[2023-08-09T15:37:30.817022] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_hvgain_02.fits' CALDB file.
+[2023-08-09T15:37:30.817064] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_hvgain_02.fits in readonly mode
+[2023-08-09T15:37:30.828443] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_hvgain_02.fits...
+[2023-08-09T15:37:30.829981] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_hvgain_02.fits closed.
+[2023-08-09T15:37:30.842318] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_secvar_02.fits file.
+[2023-08-09T15:37:30.842394] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_secvar_02.fits
+[2023-08-09T15:37:30.842450] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_secvar_02.fits' CALDB file.
+[2023-08-09T15:37:30.842501] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_secvar_02.fits in readonly mode
+[2023-08-09T15:37:30.870954] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_secvar_02.fits...
+[2023-08-09T15:37:30.872149] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d2_20170101_secvar_02.fits closed.
+[2023-08-09T15:37:30.872221] [INFO] Gain calibrations files ready.
+[2023-08-09T15:37:48.5927] [INFO]   ===> Processed # 741349 event(s)
+[2023-08-09T15:37:48.6498] [INFO] Writing XPPKGAIN key with value 'T'
+[2023-08-09T17:10:48.788169] [INFO] 
+[2023-08-09T17:10:48.788407] [INFO] ######################################################################
+[2023-08-09T17:10:48.788469] [INFO]   ixpegaincorrpkmap ver.: 1.5 - New run of ixpegaincorrpkmap started
+[2023-08-09T17:10:48.788522] [INFO] ######################################################################
+[2023-08-09T17:10:48.788569] [INFO] 
+[2023-08-09T17:10:49.187818] [INFO] Name of the peak gain calibration file: CALDB
+[2023-08-09T17:10:49.345418] [INFO] Name of the high voltage calibration file: CALDB
+[2023-08-09T17:10:49.511626] [INFO] Name of the pressure secular variation calibration file: CALDB
+[2023-08-09T17:10:49.594624] [INFO] Run Command : ixpegaincorrpkmap  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_gain_corr.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_gain_corr_map.fits pkgainfile=CALDB hvgainfile=CALDB secvarfile=CALDB dvgemcaldb=no
+[2023-08-09T17:10:49.594738] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:10:49.594838] [INFO]  		Running ixpegaincorrpkmap_1.5
+[2023-08-09T17:10:49.594886] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:10:49.594940] [INFO]             Input Parameters List: 
+[2023-08-09T17:10:49.594987] [INFO] Name of the input ixpeLvl1FitsFile file            : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_gain_corr.fits
+[2023-08-09T17:10:49.595035] [INFO] Name of the output ixpe file                       : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_gain_corr_map.fits
+[2023-08-09T17:10:49.595082] [INFO] Name of the peak gain calibration file             : CALDB
+[2023-08-09T17:10:49.595127] [INFO] Name of the high voltage calibration file          : CALDB
+[2023-08-09T17:10:49.595176] [INFO] Name of the pressure variation calibration file    : CALDB
+[2023-08-09T17:10:49.595220] [INFO] Use VGEM value from CALDB hvgainfile               : no
+[2023-08-09T17:10:49.595296] [INFO] Log Terminal level                                 : 1
+[2023-08-09T17:10:49.595355] [INFO] Log File Level                                     : 1
+[2023-08-09T17:10:49.595420] [INFO] ---------------------------------------------------------------------
+[2023-08-09T17:10:49.667921] [INFO] Using VGEM value from keyword S_VGEM of input event file : 453.053
+[2023-08-09T17:10:49.769733] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d1_20170101_pkgain_05.fits file.
+[2023-08-09T17:10:49.769808] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d1_20170101_pkgain_05.fits
+[2023-08-09T17:10:49.769865] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d1_20170101_pkgain_05.fits' CALDB file.
+[2023-08-09T17:10:49.769930] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d1_20170101_pkgain_05.fits in readonly mode
+[2023-08-09T17:10:49.838409] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d1_20170101_pkgain_05.fits...
+[2023-08-09T17:10:49.925022] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d1_20170101_pkgain_05.fits closed.
+[2023-08-09T17:10:49.994453] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_hvgain_02.fits file.
+[2023-08-09T17:10:49.994530] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_hvgain_02.fits
+[2023-08-09T17:10:49.994585] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_hvgain_02.fits' CALDB file.
+[2023-08-09T17:10:49.994636] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_hvgain_02.fits in readonly mode
+[2023-08-09T17:10:50.14579] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_hvgain_02.fits...
+[2023-08-09T17:10:50.16021] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_hvgain_02.fits closed.
+[2023-08-09T17:10:50.97640] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_secvar_02.fits file.
+[2023-08-09T17:10:50.97712] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_secvar_02.fits
+[2023-08-09T17:10:50.97766] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_secvar_02.fits' CALDB file.
+[2023-08-09T17:10:50.97814] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_secvar_02.fits in readonly mode
+[2023-08-09T17:10:50.129308] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_secvar_02.fits...
+[2023-08-09T17:10:50.146156] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d1_20170101_secvar_02.fits closed.
+[2023-08-09T17:10:50.146225] [INFO] Gain calibrations files ready.
+[2023-08-09T17:11:12.597335] [INFO]   ===> Processed # 971775 event(s)
+[2023-08-09T17:11:12.667114] [INFO] Writing XPPKGAIN key with value 'T'
+[2023-08-11T15:22:02.555534] [INFO] 
+[2023-08-11T15:22:02.555743] [INFO] ######################################################################
+[2023-08-11T15:22:02.555819] [INFO]   ixpegaincorrpkmap ver.: 1.5 - New run of ixpegaincorrpkmap started
+[2023-08-11T15:22:02.555876] [INFO] ######################################################################
+[2023-08-11T15:22:02.555927] [INFO] 
+[2023-08-11T15:22:02.582643] [INFO] Name of the peak gain calibration file: CALDB
+[2023-08-11T15:22:02.590938] [INFO] Name of the high voltage calibration file: CALDB
+[2023-08-11T15:22:02.601028] [INFO] Name of the pressure secular variation calibration file: CALDB
+[2023-08-11T15:22:02.609730] [INFO] Run Command : ixpegaincorrpkmap  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_gain_corr.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_gain_corr_map.fits pkgainfile=CALDB hvgainfile=CALDB secvarfile=CALDB dvgemcaldb=no
+[2023-08-11T15:22:02.609839] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:02.609945] [INFO]  		Running ixpegaincorrpkmap_1.5
+[2023-08-11T15:22:02.609998] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:02.610046] [INFO]             Input Parameters List: 
+[2023-08-11T15:22:02.610103] [INFO] Name of the input ixpeLvl1FitsFile file            : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_gain_corr.fits
+[2023-08-11T15:22:02.610151] [INFO] Name of the output ixpe file                       : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_gain_corr_map.fits
+[2023-08-11T15:22:02.610200] [INFO] Name of the peak gain calibration file             : CALDB
+[2023-08-11T15:22:02.610246] [INFO] Name of the high voltage calibration file          : CALDB
+[2023-08-11T15:22:02.610321] [INFO] Name of the pressure variation calibration file    : CALDB
+[2023-08-11T15:22:02.610380] [INFO] Use VGEM value from CALDB hvgainfile               : no
+[2023-08-11T15:22:02.610450] [INFO] Log Terminal level                                 : 1
+[2023-08-11T15:22:02.610500] [INFO] Log File Level                                     : 1
+[2023-08-11T15:22:02.610547] [INFO] ---------------------------------------------------------------------
+[2023-08-11T15:22:02.620765] [INFO] Using VGEM value from keyword S_VGEM of input event file : 439.09
+[2023-08-11T15:22:02.629766] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d3_20170101_pkgain_05.fits file.
+[2023-08-11T15:22:02.629826] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d3_20170101_pkgain_05.fits
+[2023-08-11T15:22:02.629869] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d3_20170101_pkgain_05.fits' CALDB file.
+[2023-08-11T15:22:02.629918] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d3_20170101_pkgain_05.fits in readonly mode
+[2023-08-11T15:22:02.658626] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d3_20170101_pkgain_05.fits...
+[2023-08-11T15:22:02.701591] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/pkgain/ixpe_d3_20170101_pkgain_05.fits closed.
+[2023-08-11T15:22:02.707597] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_hvgain_02.fits file.
+[2023-08-11T15:22:02.707651] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_hvgain_02.fits
+[2023-08-11T15:22:02.707700] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_hvgain_02.fits' CALDB file.
+[2023-08-11T15:22:02.707738] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_hvgain_02.fits in readonly mode
+[2023-08-11T15:22:02.727247] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_hvgain_02.fits...
+[2023-08-11T15:22:02.728029] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_hvgain_02.fits closed.
+[2023-08-11T15:22:02.734112] [INFO] Info: CalGetFileName: Found /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_secvar_02.fits file.
+[2023-08-11T15:22:02.734190] [INFO] Info: CalGetFileName: in Calibration database./home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_secvar_02.fits
+[2023-08-11T15:22:02.734263] [INFO] Info: Processing '/home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_secvar_02.fits' CALDB file.
+[2023-08-11T15:22:02.734328] [INFO] Opening file /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_secvar_02.fits in readonly mode
+[2023-08-11T15:22:02.749001] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_secvar_02.fits...
+[2023-08-11T15:22:02.749798] [INFO] File /home/groups/rwr/jtd/caldb/data/ixpe/gpd/bcf/instrument/ixpe_d3_20170101_secvar_02.fits closed.
+[2023-08-11T15:22:02.749879] [INFO] Gain calibrations files ready.
+[2023-08-11T15:22:22.658218] [INFO]   ===> Processed # 868064 event(s)
+[2023-08-11T15:22:22.658972] [INFO] Writing XPPKGAIN key with value 'T'

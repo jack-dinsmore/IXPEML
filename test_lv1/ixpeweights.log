@@ -1,0 +1,51 @@
+[2023-08-09T15:50:38.610002] [INFO] 
+[2023-08-09T15:50:38.610207] [INFO] ######################################################################
+[2023-08-09T15:50:38.610269] [INFO]   ixpeweights ver.: 1.1 - New run of ixpeweights started
+[2023-08-09T15:50:38.610343] [INFO] ######################################################################
+[2023-08-09T15:50:38.610390] [INFO] 
+[2023-08-09T15:50:38.628786] [INFO] Run Command : ixpeweights  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj_w.fits
+[2023-08-09T15:50:38.628896] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:50:38.628997] [INFO]  		Running ixpeweights_1.1
+[2023-08-09T15:50:38.629047] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:50:38.629094] [INFO]             Input Parameters List: 
+[2023-08-09T15:50:38.629144] [INFO] Name of the input IXPE Event file                     : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-09T15:50:38.629192] [INFO] Name of the output IXPE Event file                    : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj_w.fits
+[2023-08-09T15:50:38.629255] [INFO] Log Terminal level                                    : 1
+[2023-08-09T15:50:38.629319] [INFO] Log File Level                                        : 1
+[2023-08-09T15:50:38.629372] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:50:40.617494] [INFO]   ===> Processed # 741349 event(s)
+[2023-08-09T15:50:40.617546] [INFO] Writing XPWEIGHT key with value 'T'
+[2023-08-09T17:11:32.873802] [INFO] 
+[2023-08-09T17:11:32.874013] [INFO] ######################################################################
+[2023-08-09T17:11:32.874080] [INFO]   ixpeweights ver.: 1.1 - New run of ixpeweights started
+[2023-08-09T17:11:32.874132] [INFO] ######################################################################
+[2023-08-09T17:11:32.874178] [INFO] 
+[2023-08-09T17:11:33.154778] [INFO] Run Command : ixpeweights  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes_adj.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes_adj_w.fits
+[2023-08-09T17:11:33.154891] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:11:33.155000] [INFO]  		Running ixpeweights_1.1
+[2023-08-09T17:11:33.155048] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:11:33.155095] [INFO]             Input Parameters List: 
+[2023-08-09T17:11:33.155145] [INFO] Name of the input IXPE Event file                     : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-09T17:11:33.155193] [INFO] Name of the output IXPE Event file                    : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes_adj_w.fits
+[2023-08-09T17:11:33.155282] [INFO] Log Terminal level                                    : 1
+[2023-08-09T17:11:33.155340] [INFO] Log File Level                                        : 1
+[2023-08-09T17:11:33.155395] [INFO] ---------------------------------------------------------------------
+[2023-08-09T17:11:35.746628] [INFO]   ===> Processed # 971775 event(s)
+[2023-08-09T17:11:35.746693] [INFO] Writing XPWEIGHT key with value 'T'
+[2023-08-11T15:22:35.887069] [INFO] 
+[2023-08-11T15:22:35.887298] [INFO] ######################################################################
+[2023-08-11T15:22:35.887386] [INFO]   ixpeweights ver.: 1.1 - New run of ixpeweights started
+[2023-08-11T15:22:35.887448] [INFO] ######################################################################
+[2023-08-11T15:22:35.887499] [INFO] 
+[2023-08-11T15:22:35.905509] [INFO] Run Command : ixpeweights  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes_adj.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes_adj_w.fits
+[2023-08-11T15:22:35.905621] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:35.905722] [INFO]  		Running ixpeweights_1.1
+[2023-08-11T15:22:35.905787] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:35.905836] [INFO]             Input Parameters List: 
+[2023-08-11T15:22:35.905898] [INFO] Name of the input IXPE Event file                     : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-11T15:22:35.905949] [INFO] Name of the output IXPE Event file                    : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes_adj_w.fits
+[2023-08-11T15:22:35.906033] [INFO] Log Terminal level                                    : 1
+[2023-08-11T15:22:35.906121] [INFO] Log File Level                                        : 1
+[2023-08-11T15:22:35.906177] [INFO] ---------------------------------------------------------------------
+[2023-08-11T15:22:38.155902] [INFO]   ===> Processed # 868064 event(s)
+[2023-08-11T15:22:38.155969] [INFO] Writing XPWEIGHT key with value 'T'

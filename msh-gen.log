@@ -1,0 +1,123 @@
+Wed Jul 26 19:05:09 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  Tesla P100-PCIE-16GB           On  | 00000000:03:00.0 Off |                    0 |
+| N/A   32C    P0              26W / 250W |      0MiB / 16384MiB |      0%   E. Process |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  Tesla P100-PCIE-16GB           On  | 00000000:04:00.0 Off |                    0 |
+| N/A   31C    P0              28W / 250W |      0MiB / 16384MiB |      0%   E. Process |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+`fused_weight_gradient_mlp_cuda` module not found. gradient accumulation fusion with weight gradient computation disabled.
+Evaluating using ensemble: 
+ v2.0
+
+ 6 NNs in the ensemble 
+
+>> Angular NN 1/3 : 
+
+Loading full dataset into memory
+
+Dataset:  /home/groups/rwr/jtd/IXPEML/data/02001399/recon/
+Dataset size:  50000
+NN on GPU 
+
+=> loading checkpoint '/home/groups/rwr/jtd/IXPEML/net_archive/68720aeff_peakonly_mserrall3_O1gpu/models/mom_1024_110.ptmodel'
+Let's use 2 GPUs!
+Evaluating on GPU 
+
+0 of 50000 reconstructed.
+>> Complete
+>> Angular NN 2/3 : 
+
+Loading full dataset into memory
+
+Dataset:  /home/groups/rwr/jtd/IXPEML/data/02001399/recon/
+Dataset size:  50000
+NN on GPU 
+
+=> loading checkpoint '/home/groups/rwr/jtd/IXPEML/net_archive/68720aeff_peakonly_mserrall3_O1gpu/models/RLRP_512_90.ptmodel'
+Let's use 2 GPUs!
+Evaluating on GPU 
+
+0 of 50000 reconstructed.
+>> Complete
+>> Angular NN 3/3 : 
+
+Loading full dataset into memory
+
+Dataset:  /home/groups/rwr/jtd/IXPEML/data/02001399/recon/
+Dataset size:  50000
+NN on GPU 
+
+=> loading checkpoint '/home/groups/rwr/jtd/IXPEML/net_archive/68720aeff_peakonly_mserrall3_O1/models/mom_1024_170.ptmodel'
+Let's use 2 GPUs!
+Evaluating on GPU 
+
+0 of 50000 reconstructed.
+>> Complete
+>> Ptail NN 1/3 : 
+
+Loading full dataset into memory
+
+Dataset:  /home/groups/rwr/jtd/IXPEML/data/02001399/recon/
+Dataset size:  50000
+NN on GPU 
+
+=> loading checkpoint '/home/groups/rwr/jtd/IXPEML/net_archive/68720aeff_tailvpeak0p1_O1/models/mom_512_50.ptmodelB'
+Let's use 2 GPUs!
+Evaluating on GPU 
+
+/home/groups/rwr/jtd/IXPEML/nn/cnn.py:441: RuntimeWarning: overflow encountered in exp
+  y_hat_angles = np.array(( np.arctan2(y_hats[:,1], y_hats[:,0]), np.sqrt(np.exp(y_hats[:,2])), y_hats[:,3],
+/home/groups/rwr/jtd/IXPEML/util/methods.py:347: RuntimeWarning: divide by zero encountered in true_divide
+  w = i1(1 / sigma**2) / i0(1 / sigma**2)
+/home/groups/rwr/jtd/IXPEML/util/methods.py:347: RuntimeWarning: invalid value encountered in true_divide
+  w = i1(1 / sigma**2) / i0(1 / sigma**2)
+/home/groups/rwr/jtd/IXPEML/util/methods.py:35: RuntimeWarning: divide by zero encountered in log
+  a = np.log(iterable)
+0 of 50000 reconstructed.
+>> Complete
+>> Ptail NN 2/3 : 
+
+Loading full dataset into memory
+
+Dataset:  /home/groups/rwr/jtd/IXPEML/data/02001399/recon/
+Dataset size:  50000
+NN on GPU 
+
+=> loading checkpoint '/home/groups/rwr/jtd/IXPEML/net_archive/68720aeff_tailvpeak0p5_O1/models/RLRP_1024_30.ptmodelB'
+Let's use 2 GPUs!
+Evaluating on GPU 
+
+0 of 50000 reconstructed.
+>> Complete
+>> Ptail NN 3/3 : 
+
+Loading full dataset into memory
+
+Dataset:  /home/groups/rwr/jtd/IXPEML/data/02001399/recon/
+Dataset size:  50000
+NN on GPU 
+
+=> loading checkpoint '/home/groups/rwr/jtd/IXPEML/net_archive/68720aeff_tailvpeak1p0_O1/models/RLRP_1024_30.ptmodelB'
+Let's use 2 GPUs!
+Evaluating on GPU 
+
+0 of 50000 reconstructed.
+>> Complete
+Saved to: /home/groups/rwr/jtd/IXPEML/data_02001399_recon___nn_msh__ensemble.fits

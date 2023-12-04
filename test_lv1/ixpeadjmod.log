@@ -1,0 +1,116 @@
+[2023-08-09T13:56:13.833551] [INFO] 
+[2023-08-09T13:56:13.833801] [INFO] ##############################################################
+[2023-08-09T13:56:13.833860] [INFO]   ixpeadjmod ver.: 1.5 - New run of ixpeadjmod started
+[2023-08-09T13:56:13.833891] [INFO] ##############################################################
+[2023-08-09T13:56:13.833919] [INFO] 
+[2023-08-09T13:56:13.857405] [INFO] Spurios Modulation Calibration file: /home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits
+[2023-08-09T13:56:13.864538] [INFO] Run Command : ixpeadjmod  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits spmodfile=/home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits writedetqucols=0
+[2023-08-09T13:56:13.864610] [INFO] ------------------------------------------------------------------
+[2023-08-09T13:56:13.864652] [INFO]  		Running ixpeadjmod_1.5
+[2023-08-09T13:56:13.864710] [INFO] ------------------------------------------------------------------
+[2023-08-09T13:56:13.864740] [INFO]             Input Parameters List: 
+[2023-08-09T13:56:13.864793] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T13:56:13.864841] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-09T13:56:13.864881] [INFO] Name of the Spurios Modulation file                   : /home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits
+[2023-08-09T13:56:13.864913] [INFO] Write original values of 'DETQ' and 'DETU' columns:   : no
+[2023-08-09T13:56:13.864947] [INFO] Log Terminal level                                    : 1
+[2023-08-09T13:56:13.864974] [INFO] Log File Level                                        : 1
+[2023-08-09T13:56:13.865020] [INFO] ---------------------------------------------------------------------
+[2023-08-09T13:56:13.866628] [ERROR] OpenFitsFile FITSIO routine ffopen returned error #104: could not open the named file
+[2023-08-09T13:56:13.866714] [ERROR] Error: Unable to open input fits file: /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T15:45:19.426886] [INFO] 
+[2023-08-09T15:45:19.427101] [INFO] ##############################################################
+[2023-08-09T15:45:19.427175] [INFO]   ixpeadjmod ver.: 1.5 - New run of ixpeadjmod started
+[2023-08-09T15:45:19.427231] [INFO] ##############################################################
+[2023-08-09T15:45:19.427290] [INFO] 
+[2023-08-09T15:45:19.455360] [INFO] Spurios Modulation Calibration file: /home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits
+[2023-08-09T15:45:19.464611] [INFO] Run Command : ixpeadjmod  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits spmodfile=/home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits writedetqucols=0
+[2023-08-09T15:45:19.464707] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:45:19.464815] [INFO]  		Running ixpeadjmod_1.5
+[2023-08-09T15:45:19.464865] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:45:19.464912] [INFO]             Input Parameters List: 
+[2023-08-09T15:45:19.464961] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T15:45:19.465007] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-09T15:45:19.465063] [INFO] Name of the Spurios Modulation file                   : /home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits
+[2023-08-09T15:45:19.465121] [INFO] Write original values of 'DETQ' and 'DETU' columns:   : no
+[2023-08-09T15:45:19.465166] [INFO] Log Terminal level                                    : 1
+[2023-08-09T15:45:19.465224] [INFO] Log File Level                                        : 1
+[2023-08-09T15:45:19.465282] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:45:19.497161] [INFO] Info:  Spurios Modulation - Processing '/home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits' file
+[2023-08-09T15:45:19.497252] [INFO] Opening file /home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits in readonly mode
+[2023-08-09T15:45:19.497406] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/IXPEML/moments/CALDB/data/ixpe/gpd/bcf/spmod/ixpe_d2_20170101_spmod_nn.fits...
+[2023-08-09T15:50:13.473360] [INFO] 
+[2023-08-09T15:50:13.473574] [INFO] ##############################################################
+[2023-08-09T15:50:13.473644] [INFO]   ixpeadjmod ver.: 1.5 - New run of ixpeadjmod started
+[2023-08-09T15:50:13.473695] [INFO] ##############################################################
+[2023-08-09T15:50:13.473750] [INFO] 
+[2023-08-09T15:50:13.499786] [INFO] Spurios Modulation Calibration file: /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits
+[2023-08-09T15:50:13.506294] [INFO] Run Command : ixpeadjmod  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits spmodfile=/home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits writedetqucols=0
+[2023-08-09T15:50:13.506404] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:50:13.506503] [INFO]  		Running ixpeadjmod_1.5
+[2023-08-09T15:50:13.506553] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:50:13.506599] [INFO]             Input Parameters List: 
+[2023-08-09T15:50:13.506647] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T15:50:13.506695] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-09T15:50:13.506741] [INFO] Name of the Spurios Modulation file                   : /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits
+[2023-08-09T15:50:13.506788] [INFO] Write original values of 'DETQ' and 'DETU' columns:   : no
+[2023-08-09T15:50:13.506835] [INFO] Log Terminal level                                    : 1
+[2023-08-09T15:50:13.506880] [INFO] Log File Level                                        : 1
+[2023-08-09T15:50:13.506925] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:50:13.517765] [INFO] Info:  Spurios Modulation - Processing '/home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits' file
+[2023-08-09T15:50:13.517856] [INFO] Opening file /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits in readonly mode
+[2023-08-09T15:50:13.573506] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits...
+[2023-08-09T15:50:13.716363] [INFO] File /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d2_20170101_spmod_nn.fits closed.
+[2023-08-09T15:50:13.716409] [INFO] Adj Modulation calibrations ready.
+[2023-08-09T15:50:18.188251] [INFO]   ===> Processed # 741349 event(s)
+[2023-08-09T15:50:18.188320] [INFO] Writing XPADJMOD key with value 'T'
+[2023-08-09T17:11:23.992977] [INFO] 
+[2023-08-09T17:11:23.993190] [INFO] ##############################################################
+[2023-08-09T17:11:23.993258] [INFO]   ixpeadjmod ver.: 1.5 - New run of ixpeadjmod started
+[2023-08-09T17:11:23.993324] [INFO] ##############################################################
+[2023-08-09T17:11:23.993373] [INFO] 
+[2023-08-09T17:11:24.291088] [INFO] Spurios Modulation Calibration file: /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits
+[2023-08-09T17:11:24.395863] [INFO] Run Command : ixpeadjmod  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes_adj.fits spmodfile=/home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits writedetqucols=0
+[2023-08-09T17:11:24.395969] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:11:24.396069] [INFO]  		Running ixpeadjmod_1.5
+[2023-08-09T17:11:24.396120] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:11:24.396173] [INFO]             Input Parameters List: 
+[2023-08-09T17:11:24.396229] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T17:11:24.396294] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-09T17:11:24.396345] [INFO] Name of the Spurios Modulation file                   : /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits
+[2023-08-09T17:11:24.396407] [INFO] Write original values of 'DETQ' and 'DETU' columns:   : no
+[2023-08-09T17:11:24.396467] [INFO] Log Terminal level                                    : 1
+[2023-08-09T17:11:24.396523] [INFO] Log File Level                                        : 1
+[2023-08-09T17:11:24.396578] [INFO] ---------------------------------------------------------------------
+[2023-08-09T17:11:24.468253] [INFO] Info:  Spurios Modulation - Processing '/home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits' file
+[2023-08-09T17:11:24.468357] [INFO] Opening file /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits in readonly mode
+[2023-08-09T17:11:24.540417] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits...
+[2023-08-09T17:11:24.684623] [INFO] File /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d1_20170101_spmod_nn.fits closed.
+[2023-08-09T17:11:24.684708] [INFO] Adj Modulation calibrations ready.
+[2023-08-09T17:11:30.500778] [INFO]   ===> Processed # 971775 event(s)
+[2023-08-09T17:11:30.516242] [INFO] Writing XPADJMOD key with value 'T'
+[2023-08-11T15:22:29.12540] [INFO] 
+[2023-08-11T15:22:29.12748] [INFO] ##############################################################
+[2023-08-11T15:22:29.12815] [INFO]   ixpeadjmod ver.: 1.5 - New run of ixpeadjmod started
+[2023-08-11T15:22:29.12871] [INFO] ##############################################################
+[2023-08-11T15:22:29.12923] [INFO] 
+[2023-08-11T15:22:29.52774] [INFO] Spurios Modulation Calibration file: /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits
+[2023-08-11T15:22:29.64176] [INFO] Run Command : ixpeadjmod  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes_adj.fits spmodfile=/home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits writedetqucols=0
+[2023-08-11T15:22:29.64292] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:29.64401] [INFO]  		Running ixpeadjmod_1.5
+[2023-08-11T15:22:29.64466] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:29.64517] [INFO]             Input Parameters List: 
+[2023-08-11T15:22:29.64572] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes.fits
+[2023-08-11T15:22:29.64626] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes_adj.fits
+[2023-08-11T15:22:29.64692] [INFO] Name of the Spurios Modulation file                   : /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits
+[2023-08-11T15:22:29.64743] [INFO] Write original values of 'DETQ' and 'DETU' columns:   : no
+[2023-08-11T15:22:29.64794] [INFO] Log Terminal level                                    : 1
+[2023-08-11T15:22:29.64842] [INFO] Log File Level                                        : 1
+[2023-08-11T15:22:29.64890] [INFO] ---------------------------------------------------------------------
+[2023-08-11T15:22:29.89063] [INFO] Info:  Spurios Modulation - Processing '/home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits' file
+[2023-08-11T15:22:29.89102] [INFO] Opening file /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits in readonly mode
+[2023-08-11T15:22:29.135398] [INFO] Reading primary HDU header for /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits...
+[2023-08-11T15:22:29.264297] [INFO] File /home/groups/rwr/jtd/IXPEML/caldb/spmod/ixpe_d3_20170101_spmod_nn.fits closed.
+[2023-08-11T15:22:29.264364] [INFO] Adj Modulation calibrations ready.
+[2023-08-11T15:22:34.560108] [INFO]   ===> Processed # 868064 event(s)
+[2023-08-11T15:22:34.560181] [INFO] Writing XPADJMOD key with value 'T'

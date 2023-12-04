@@ -1,0 +1,75 @@
+[2023-08-09T13:56:13.572537] [INFO] 
+[2023-08-09T13:56:13.572819] [INFO] ##############################################################
+[2023-08-09T13:56:13.572864] [INFO]   ixpecalcstokes ver.: 1.1 - New run of ixpecalcstokes started
+[2023-08-09T13:56:13.572917] [INFO] ##############################################################
+[2023-08-09T13:56:13.572949] [INFO] 
+[2023-08-09T13:56:13.610577] [INFO] Run Command : ixpecalcstokes  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits applycut=0
+[2023-08-09T13:56:13.610735] [INFO] ------------------------------------------------------------------
+[2023-08-09T13:56:13.610818] [INFO]  		Running ixpecalcstokes_1.1
+[2023-08-09T13:56:13.610866] [INFO] ------------------------------------------------------------------
+[2023-08-09T13:56:13.610908] [INFO]             Input Parameters List: 
+[2023-08-09T13:56:13.610942] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn.fits
+[2023-08-09T13:56:13.610973] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T13:56:13.611002] [INFO] Log Terminal level                                    : 1
+[2023-08-09T13:56:13.611034] [INFO] Log File Level                                        : 1
+[2023-08-09T13:56:13.611063] [INFO] Apply cut for best angle and position estimation      : no
+[2023-08-09T13:56:13.611095] [INFO] ---------------------------------------------------------------------
+[2023-08-09T13:56:13.612642] [ERROR] OpenFitsFile FITSIO routine ffopen returned error #104: could not open the named file
+[2023-08-09T13:56:13.612710] [ERROR] Error: Unable to open input fits file: /home/groups/rwr/jtd/IXPEML/data/leakage/01002601event_l1/ixpe01002601_det2_evt1_v02_recon_nn.fits
+[2023-08-09T13:56:13.612743] [INFO] -----------------------------------
+[2023-08-09T13:56:13.612773] [INFO] ixpecalcstokes_1.1: Exit with Error.
+[2023-08-09T13:56:13.612801] [INFO] -----------------------------------
+[2023-08-09T15:45:05.742758] [INFO] 
+[2023-08-09T15:45:05.742970] [INFO] ##############################################################
+[2023-08-09T15:45:05.743041] [INFO]   ixpecalcstokes ver.: 1.1 - New run of ixpecalcstokes started
+[2023-08-09T15:45:05.743091] [INFO] ##############################################################
+[2023-08-09T15:45:05.743136] [INFO] 
+[2023-08-09T15:45:05.765007] [INFO] Run Command : ixpecalcstokes  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits applycut=0
+[2023-08-09T15:45:05.765105] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:45:05.765202] [INFO]  		Running ixpecalcstokes_1.1
+[2023-08-09T15:45:05.765255] [INFO] ------------------------------------------------------------------
+[2023-08-09T15:45:05.765316] [INFO]             Input Parameters List: 
+[2023-08-09T15:45:05.765366] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn.fits
+[2023-08-09T15:45:05.765413] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det2_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T15:45:05.765460] [INFO] Log Terminal level                                    : 1
+[2023-08-09T15:45:05.765505] [INFO] Log File Level                                        : 1
+[2023-08-09T15:45:05.765550] [INFO] Apply cut for best angle and position estimation      : no
+[2023-08-09T15:45:05.765595] [INFO] ---------------------------------------------------------------------
+[2023-08-09T15:45:06.646669] [INFO]   ===> Processed # 741349 event(s)
+[2023-08-09T15:45:06.646722] [INFO] Writing XPSTOKES key with value 'T'
+[2023-08-09T17:11:20.203054] [INFO] 
+[2023-08-09T17:11:20.203261] [INFO] ##############################################################
+[2023-08-09T17:11:20.203342] [INFO]   ixpecalcstokes ver.: 1.1 - New run of ixpecalcstokes started
+[2023-08-09T17:11:20.203403] [INFO] ##############################################################
+[2023-08-09T17:11:20.203450] [INFO] 
+[2023-08-09T17:11:20.488097] [INFO] Run Command : ixpecalcstokes  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes.fits applycut=0
+[2023-08-09T17:11:20.488211] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:11:20.488325] [INFO]  		Running ixpecalcstokes_1.1
+[2023-08-09T17:11:20.488377] [INFO] ------------------------------------------------------------------
+[2023-08-09T17:11:20.488426] [INFO]             Input Parameters List: 
+[2023-08-09T17:11:20.488477] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn.fits
+[2023-08-09T17:11:20.488525] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det1_evt1_v02_recon_nn_stokes.fits
+[2023-08-09T17:11:20.488575] [INFO] Log Terminal level                                    : 1
+[2023-08-09T17:11:20.488621] [INFO] Log File Level                                        : 1
+[2023-08-09T17:11:20.488667] [INFO] Apply cut for best angle and position estimation      : no
+[2023-08-09T17:11:20.488715] [INFO] ---------------------------------------------------------------------
+[2023-08-09T17:11:21.618380] [INFO]   ===> Processed # 971775 event(s)
+[2023-08-09T17:11:21.618435] [INFO] Writing XPSTOKES key with value 'T'
+[2023-08-11T15:22:26.777173] [INFO] 
+[2023-08-11T15:22:26.777397] [INFO] ##############################################################
+[2023-08-11T15:22:26.777468] [INFO]   ixpecalcstokes ver.: 1.1 - New run of ixpecalcstokes started
+[2023-08-11T15:22:26.777532] [INFO] ##############################################################
+[2023-08-11T15:22:26.777582] [INFO] 
+[2023-08-11T15:22:26.803621] [INFO] Run Command : ixpecalcstokes  infile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn.fits outfile=/home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes.fits applycut=0
+[2023-08-11T15:22:26.803727] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:26.803835] [INFO]  		Running ixpecalcstokes_1.1
+[2023-08-11T15:22:26.803899] [INFO] ------------------------------------------------------------------
+[2023-08-11T15:22:26.803947] [INFO]             Input Parameters List: 
+[2023-08-11T15:22:26.804003] [INFO] Name of the input event file                          : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn.fits
+[2023-08-11T15:22:26.804055] [INFO] Name of the output event file                         : /home/groups/rwr/jtd/IXPEML/data/leakage/01002601/event_l1/ixpe01002601_det3_evt1_v02_recon_nn_stokes.fits
+[2023-08-11T15:22:26.804103] [INFO] Log Terminal level                                    : 1
+[2023-08-11T15:22:26.804154] [INFO] Log File Level                                        : 1
+[2023-08-11T15:22:26.804201] [INFO] Apply cut for best angle and position estimation      : no
+[2023-08-11T15:22:26.804261] [INFO] ---------------------------------------------------------------------
+[2023-08-11T15:22:27.657852] [INFO]   ===> Processed # 868064 event(s)
+[2023-08-11T15:22:27.657908] [INFO] Writing XPSTOKES key with value 'T'
