@@ -2,10 +2,10 @@
 #
 #SBATCH -o log-nn-%j.log
 #SBATCH --job-name=NN1-01002601
-#SBATCH --time=24:00:00
+#SBATCH --time=48:00:00
 #SBATCH --ntasks=1
 ##SBATCH --cpus-per-task=2
-#SBATCH --mem=24G
+#SBATCH --mem=36G
 #SBATCH --partition=owners
 #SBATCH --gres gpu:4
 #SBATCH -C GPU_MEM:16GB

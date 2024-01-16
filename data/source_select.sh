@@ -140,9 +140,9 @@ case $SOURCE in
         export SETNUM='01001002'
         export VERSION='00'
         export ATTNUM='11'
-        export PAYNUM1='09'
-        export PAYNUM2='10'
-        export PAYNUM3='08'
+        export PAYNUM1='08'
+        export PAYNUM2='09'
+        export PAYNUM3='07'
         ;;
     
     crab5)
@@ -152,9 +152,9 @@ case $SOURCE in
         export VERSION='00'
         export SETNUM='01001002'
         export ATTNUM='11'
-        export PAYNUM1='09'
-        export PAYNUM2='10'
-        export PAYNUM3='08'
+        export PAYNUM1='08'
+        export PAYNUM2='09'
+        export PAYNUM3='07'
         ;;
 
     crab6)
@@ -164,9 +164,9 @@ case $SOURCE in
         export VERSION='00'
         export SETNUM='01001002'
         export ATTNUM='11'
-        export PAYNUM1='09'
-        export PAYNUM2='10'
-        export PAYNUM3='08'
+        export PAYNUM1='08'
+        export PAYNUM2='09'
+        export PAYNUM3='07'
         ;;
 
     crab7)
@@ -235,6 +235,42 @@ case $SOURCE in
         export OBS='02001060'
         export VERSION='00'
         export SETNUM='02001001'
+        export ATTNUM='01'
+        export PAYNUM1='01'
+        export PAYNUM2='01'
+        export PAYNUM3='01'
+        ;;
+
+    crab13)
+        export DATA_SUBDIR='crab'
+        export SEQ='02006001'
+        export OBS='02006010'
+        export VERSION='00'
+        export SETNUM='02006001'
+        export ATTNUM='01'
+        export PAYNUM1='01'
+        export PAYNUM2='01'
+        export PAYNUM3='01'
+        ;;
+
+    crab14)
+        export DATA_SUBDIR='crab'
+        export SEQ='02006001'
+        export OBS='02006020'
+        export VERSION='00'
+        export SETNUM='02006001'
+        export ATTNUM='01'
+        export PAYNUM1='01'
+        export PAYNUM2='01'
+        export PAYNUM3='01'
+        ;;
+    
+    crab15)
+        export DATA_SUBDIR='crab'
+        export SEQ='02006001'
+        export OBS='02006030'
+        export VERSION='00'
+        export SETNUM='02006001'
         export ATTNUM='01'
         export PAYNUM1='01'
         export PAYNUM2='01'
